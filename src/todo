@@ -1,0 +1,5 @@
+-get icons for app, center text
+-refactor ifs for and obejct s4eason
+-create css and refactor to use apropiate css depends of the index object
+-refactor the season display in a new component
+-use the component and the default props 

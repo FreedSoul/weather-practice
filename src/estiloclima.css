@@ -1,0 +1,19 @@
+.mostrar-clima{
+    color: rgb(0, 53, 122);
+    font-size: 70px;
+
+    background-color: bisque;
+}
+
+body{
+    /*background-color: rgb(99, 252, 85);*/
+}
+
+.winter{
+    background-color: rgb(85, 199, 252);
+}
+.summer{
+    background-color: rgb(247, 233, 49);
+}
+
+    
