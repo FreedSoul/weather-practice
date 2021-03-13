@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDom from 'react-dom';
 import SeasonDisplay from './SeasonDisplay';
 import Spinner from './Spinner'
+import './estiloclima.css'
 
 class App extends React.Component{
     state = { lat: null , errorMessage : ''}
