@@ -16,15 +16,23 @@ const getSeason = (lat, month) => {
     if (month > 2 && month < 9) {
         return (lat > 0) ? 'winter': 'summer';
     }else{
-        return (lat < 0) ?'summer':'winter';
+        return (lat < 0) ? 'summer' : 'winter';
     }
 }
 
 const SeasonDisplay = (props) =>{
     const Gseason = getSeason(props.lat, new Date().getMonth());
-    console.log(Gseason);
+    const resultSeason = Gseason==='summer'? configSeason.summer.season : configSeason.winter.season
+    const SeasonComment =  Gseason==='summer'? configSeason.summer.text : configSeason.winter.text
     return(
-        <div className={'season'}><i className={'sun outline icon'}></i>{Gseason==='summer'?configSeason.summer.season:configSeason.winter.season}<i className={'sun outline icon'}></i></div>
+        <div className={`season ${Gseason}`}>
+            <i className={'sun outline icon'}></i>
+            {resultSeason}
+            <i className={'sun outline icon'}></i>
+            <div>
+            {SeasonComment}    
+            </div>
+        </div>
     ) 
 };
 
