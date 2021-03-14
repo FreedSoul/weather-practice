@@ -4,12 +4,15 @@ body{
 }
 
 .season-display {
-    background-color: black;
     display: flex;
     height: 100vh;
     align-items: center;
     justify-content: space-around;
-    font-size: 30px;
+    font-size: 1rem;
+}
+
+.red{
+    border: 5px solid red;
 }
 
 .icon-left{
@@ -26,6 +29,7 @@ body{
 
 .winter{
     background-color: rgb(85, 199, 252);
+    
 }
 .summer{
     background-color: rgb(247, 233, 49);
